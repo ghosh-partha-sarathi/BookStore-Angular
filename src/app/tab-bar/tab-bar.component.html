@@ -1,0 +1,27 @@
+<nav>
+    <div class="row valign-wrapper h-inherit">
+    	<div class="col s2 valign-wrapper">
+      		<!-- <a href="#" class="brand-logo">Logo</a> -->
+      		<img 
+      			width="40"
+      			alt="Angular Logo"
+      			src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="/>
+      	</div>
+      	<div id="search_box" class="col s5 nav-wrapper" style="height: 80%">
+	      <form>
+	        <div class="input-field valign-wrapper">
+	          <input id="_search" type="search" style="height: 75%;" class="mb-unset" required>
+	          <label class="label-icon valign-wrapper" for="search">
+              <i class="material-icons m-px-4N">search</i>
+            </label>
+	          <i class="material-icons m-px-4N">close</i>
+	        </div>
+	      </form>
+      	</div>
+      	<div class="col s5">
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li *ngFor="let category of categories"><a href="#">{{category}}</a></li>
+	      </ul>
+      	</div>
+    </div>
+</nav>

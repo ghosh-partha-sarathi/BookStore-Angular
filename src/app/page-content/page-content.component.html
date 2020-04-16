@@ -1,0 +1,33 @@
+<div class="content-main col s12 m8">
+	<table id="" class="responsive table">
+		<thead>
+			<tr>
+				<th class="headerSort" tabindex="0" role="columnheader button" title="">#</th>
+				<th class="headerSort" tabindex="0" role="columnheader button" title="">Name </th>
+				<th class="headerSort" tabindex="0" role="columnheader button" title="">Country</th>
+				<th class="headerSort" tabindex="0" role="columnheader button" title="">Location</th>
+				<th class="headerSort" tabindex="0" role="columnheader button" title="">Catalogued size</th>
+				<th class="headerSort" tabindex="0" role="columnheader button" title="">Visitors/year</th>
+				<th class="headerSort" tabindex="0" role="columnheader button" title="">Budget</th>
+				<!-- <th class="headerSort" tabindex="0" role="columnheader button" title="">Staff</th> -->
+			</tr>
+		</thead>
+		<tbody>     
+	        <tr class="bold" *ngFor="let library of libraries; index as index">
+				<td>{{index+1}}</td>
+				<td>{{library.name}}</td>
+				<td>
+					{{library.country}}
+					<span class="flagicon">
+						<img alt="" src={{library.flagUrl}} decoding="async" width="23" height="12" class="thumbborder" srcset={{library.flagUrlSet}} data-file-width="1200" data-file-height="600">
+				</span>
+				</td>
+				<td>{{library.city}}</td>
+				<td>{{library.booksCount}}</td>
+				<td>{{library.visitors}}</td>
+				<td>{{library.budget}}</td>
+				<!-- <td>{{library.staff}}</td> -->
+	        </tr>
+    	</tbody>
+     </table>
+</div>

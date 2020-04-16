@@ -1,0 +1,31 @@
+.right-nav {
+    position: absolute; 
+    color: #1976d2;
+    right: 0;
+    margin: 0;
+    height: 80%;
+    width: inherit;
+    /* height: calc(100% + 60px); */
+    background-color: #fff;
+    z-index: 0;
+    /* overflow-y: auto; */
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
+
+.right-nav:hover {
+    overflow-y: auto;
+}
+
+#nav-mobile {
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.nav-link:hover {
+	background-color: #bae4f9;
+}

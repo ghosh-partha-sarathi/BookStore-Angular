@@ -1,0 +1,39 @@
+<header>
+    <!-- -->
+</header>
+
+<div class="page-content" role="main">
+  <div class="row">
+    <!-- top tabs -->
+    <div class="nav-bar">
+      <app-tab-bar></app-tab-bar>
+    </div>
+
+    <!-- left panel -->
+    <div class="col s12 m2 card-left">
+      <app-panel-left></app-panel-left>
+    </div>
+
+    <!--  page center content --> 
+    <div class="col s12 m8 card-center" style="padding:inherit">
+      <app-page-content>
+        <router-outlet>
+           <!-- <app-books></app-books> -->
+        </router-outlet>
+      </app-page-content>
+    </div>
+
+    <!-- right panel -->
+    <div class="col s12 m2 card-right">
+      <app-panel-right></app-panel-right>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="">
+  <span>
+      Compatible browsers – Microsoft Edge, Chrome Version 40+, Firefox Version 35+.Best viewed in 1980 x 1080 Screen resolution
+  </span>
+</footer>
+
